@@ -1,0 +1,28 @@
+<template>
+  <div class="hello">
+    <h1 @click="getInfo">{{ msg }}</h1>
+    <el-button type="primary">主要按钮</el-button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'HelloWorld',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods:{
+    getInfo(){
+      this.$http.get(this.URL.Get_book_info).then(data=>{
+        console.log(data)
+      })
+    }
+  }
+}
+</script>
+
+<style scoped>
+
+</style>
