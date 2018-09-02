@@ -10,6 +10,11 @@ export default new Router({
       path: '/',
       name: 'HelloWorld',
       component: resolve => require(['@/components/HelloWorld'], resolve)
+    },
+    {
+      path: '/Sku',
+      name: 'Sku',
+      component: resolve => require(['@/components/Sku'], resolve)
     }
   ]
 })

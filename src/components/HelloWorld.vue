@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1 @click="getInfo">{{ msg }}</h1>
-    <el-button type="primary">主要按钮</el-button>
+    <el-button type="primary" @click="turnSku">主要按钮</el-button>
   </div>
 </template>
 
@@ -18,6 +18,9 @@ export default {
       this.$http.get(this.URL.Get_book_info).then(data=>{
         console.log(data)
       })
+    },
+    turnSku(){
+      this.$router.push('/Sku')
     }
   }
 }

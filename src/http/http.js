@@ -53,7 +53,6 @@ requestMethod.forEach((method) => {
   requester[method] = function (url = '', data = {}, config = {}) {
     return new Promise((resolve, reject) => {
       instance[method](url, data, config).then((response) => {
-        console.log(url)
         if(response.status == 200){
           Message({
           message: '恭喜你，这是一条成功消息',
