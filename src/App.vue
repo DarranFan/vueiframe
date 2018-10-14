@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view/>
-        <div>
+
         <div id="loading_panel" style="display: none;">
             <div class="weui_loading_toast">
                 <div class="weui_mask_transparent"></div>
@@ -24,20 +24,19 @@
                 </div>
             </div>
         </div>
-    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
-}
+  name: "App"
+};
 </script>
 
 <style>
-@import url('./assets/css/loading.css');
+@import url("./assets/css/loading.css");
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
