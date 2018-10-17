@@ -15,6 +15,11 @@ export default new Router({
       path: '/Sku',
       name: 'Sku',
       component: resolve => require(['@/components/Sku'], resolve)
+    },
+    {
+      path: '/Test',
+      name: 'Test',
+      component: resolve => require(['@/components/Test'], resolve)
     }
   ]
 })

@@ -5,14 +5,23 @@ import App from './App'
 import router from './router'
 import axios from './http/http'
 import urls from './components/CommonUrls'
-import { Button, Select , MessageBox} from 'element-ui';
+// import ElementUI from 'element-ui';
+// import 'element-ui/lib/theme-chalk/index.css';
+// Vue.use(ElementUI);
+import { Button, Select , MessageBox,Tree ,Row,
+  Col} from 'element-ui';
  Vue.use(Button)
  Vue.use(Select)
+ Vue.use(Tree)
+ Vue.use(Row)
+ Vue.use(Col)
+
+
 
 Vue.config.productionTip = false
 Vue.prototype.$http = axios;
 Vue.prototype.URL = urls;
-Vue.prototype.$msgbox = MessageBox;
+// Vue.prototype.$msgbox = MessageBox;
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
