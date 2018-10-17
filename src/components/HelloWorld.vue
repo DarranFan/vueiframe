@@ -1,3 +1,4 @@
+
 <template>
   <div class="hello1">
     <h1 @click="getInfo">{{ msg }}</h1>
@@ -20,13 +21,21 @@ export default {
         console.log(data)
       })
     },
-    turnSku(){
-      this.$router.push('/Sku')
-    }
   }
 }
 </script>
 
-<style scoped>
-
+<style>
+  .el-tree-node__content{
+    height: 60px;
+  }
+  .line{
+    /* background-color: pink; */
+    border-top:1px solid #333;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
 </style>
