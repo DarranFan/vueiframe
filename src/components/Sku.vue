@@ -120,6 +120,7 @@
   
   
           attrList = this.sku.attributes.find(n => n.index === 2);
+          console.log(attrList)
   
           attrList.attributes.forEach(n => {
   
