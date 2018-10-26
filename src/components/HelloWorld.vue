@@ -1,4 +1,3 @@
-
 <template>
   <div class="hello1">
     <h1 @click="getInfo">{{ msg }}</h1>
@@ -14,13 +13,17 @@ export default {
       msg: 'Welcome to Your Vue.js App'
     }
   },
+  mounted(){
+  },
   methods:{
     getInfo(){
       this.$http.get(this.URL.Get_book_info).then(data=>{
-        
         console.log(data)
       })
     },
+    turnSku(){
+      this.$router.push({path:'/Sku'})
+    }
   }
 }
 </script>
