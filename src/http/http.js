@@ -44,6 +44,7 @@ instance.interceptors.response.use(res=>{
         return Promise.reject(res)
     }
 },err=>{
+    loadingInstance.close();
     return Promise.reject(err)
 })
 

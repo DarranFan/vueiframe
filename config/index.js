@@ -3,7 +3,8 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
-const root='https://api.douban.com';
+// const root='https://api.douban.com';
+const root='http://192.168.129.53:';
 module.exports = {
   dev: {
 
@@ -11,11 +12,18 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api':{
+      // '/api':{
+      //   target:root,
+      //   changeOrigin:true,
+      //   pathRewrite:{
+      //     '^/api':root
+      //   }
+      // }
+      '/8759':{
         target:root,
         changeOrigin:true,
         pathRewrite:{
-          '^/api':root
+          '^/8759':root
         }
       }
     },
