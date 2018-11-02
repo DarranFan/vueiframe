@@ -4,7 +4,7 @@
 
 const path = require('path')
 // const root='https://api.douban.com';
-const root='http://192.168.129.53:';
+const root='http://192.168.129.53:8759';
 module.exports = {
   dev: {
 
@@ -12,18 +12,11 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      // '/api':{
-      //   target:root,
-      //   changeOrigin:true,
-      //   pathRewrite:{
-      //     '^/api':root
-      //   }
-      // }
-      '/8759':{
+      '/api':{
         target:root,
         changeOrigin:true,
         pathRewrite:{
-          '^/8759':root
+          '^/api':root
         }
       }
     },

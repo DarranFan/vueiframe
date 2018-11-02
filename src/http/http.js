@@ -52,6 +52,7 @@ let requestMethod = ['get', 'post', 'delete', 'put', 'patch', 'update']
 let requester = {}
 requestMethod.forEach((method) => {
   requester[method] = function (url = '', data = {}, config = {}) {
+    console.log(url, data, config)
     return new Promise((resolve, reject) => {
       instance[method](url, data, config).then((response) => {
         if(response.status == 200){

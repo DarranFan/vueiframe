@@ -58,6 +58,7 @@ export default {
             self.loadingImg = true;
             let formData = new FormData();
             formData.append("file", blob, self.imgName);
+            console.log(formData,blob)
             // getImageUpload(formData).then(msg => {
             //   if (msg.data.errCode === 0) {
             //     self.editForm.categoryUrl = msg.data.data.url;
@@ -73,10 +74,11 @@ export default {
             //   }
             // });
             let url = '/image/upload'
-            let header = { 'Content-Type': 'multipart/form-data' }
-            self.$http.post(url,formData).then(res=>{
-              console.log(url,formData)
-              console.log(res)
+            self.$http.post(url,formData,{
+              'headers':{
+                'Content-Type':'multipart/form-data' 
+              }
+            }).then(res=>{
             })
           };
         };
