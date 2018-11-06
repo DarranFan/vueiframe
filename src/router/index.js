@@ -25,6 +25,11 @@ export default new Router({
       path: '/Upload',
       name: 'Upload',
       component: resolve => require(['@/components/Upload'], resolve)
+    },
+    {
+      path: '/CombindTable',
+      name: 'CombindTable',
+      component: resolve => require(['@/components/CombindTable'], resolve)
     }
   ]
 })

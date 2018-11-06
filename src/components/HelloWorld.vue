@@ -3,6 +3,7 @@
     <h1 @click="getInfo">{{ msg }}</h1>
     <el-button type="primary" @click="turnSku">Sku</el-button>
     <el-button type="primary" @click="turnSku1">Upload</el-button>
+    <el-button type="primary" @click="turnSku2">CombindTable</el-button>
   </div>
 </template>
 
@@ -28,6 +29,9 @@ export default {
     },
     turnSku1(){
       this.$router.push({path:'/Upload'})
+    },
+    turnSku2(){
+      this.$router.push({path:'/CombindTable'})
     }
   }
 }
