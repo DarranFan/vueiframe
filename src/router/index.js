@@ -25,6 +25,11 @@ export default new Router({
       path: '/Upload',
       name: 'Upload',
       component: resolve => require(['@/components/Upload'], resolve)
+    },
+    {
+      path: '/Parent',
+      name: 'Parent',
+      component: resolve => require(['@/components/Parent'], resolve)
     }
   ]
 })

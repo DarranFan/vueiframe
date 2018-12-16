@@ -5,6 +5,7 @@ var instance = axios.create({
     baseURL: process.env.DOMAIN,
     timeout: 1000
   });
+  console.log(process.env.DOMAIN)
 // 发送请求之前把数据json化
   instance.defaults.transformRequest = [function (data) {
     return JSON.stringify(data);
