@@ -9,7 +9,7 @@ import urls from './components/CommonUrls'
 // import 'element-ui/lib/theme-chalk/index.css';
 // Vue.use(ElementUI);
 import { Button, Select , MessageBox,Tree ,Row,
-  Col} from 'element-ui';
+  Col,Message} from 'element-ui';
  Vue.use(Button)
  Vue.use(Select)
  Vue.use(Tree)
@@ -21,6 +21,7 @@ import { Button, Select , MessageBox,Tree ,Row,
 Vue.config.productionTip = false
 Vue.prototype.$http = axios;
 Vue.prototype.URL = urls;
+Vue.prototype.$message = Message;
 // Vue.prototype.$msgbox = MessageBox;
 /* eslint-disable no-new */
 new Vue({

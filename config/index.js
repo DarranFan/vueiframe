@@ -4,6 +4,7 @@
 
 const path = require('path')
 const root='https://api.douban.com';
+// const root='http://192.168.129.53:8759';
 module.exports = {
   dev: {
 

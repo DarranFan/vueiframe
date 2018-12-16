@@ -30,6 +30,11 @@ export default new Router({
       path: '/Parent',
       name: 'Parent',
       component: resolve => require(['@/components/Parent'], resolve)
+    },
+    {
+      path: '/CombindTable',
+      name: 'CombindTable',
+      component: resolve => require(['@/components/CombindTable'], resolve)
     }
   ]
 })
