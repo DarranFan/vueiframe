@@ -9,12 +9,16 @@ import urls from './components/CommonUrls'
 // import 'element-ui/lib/theme-chalk/index.css';
 // Vue.use(ElementUI);
 import { Button, Select , MessageBox,Tree ,Row,
-  Col,Message} from 'element-ui';
+  Col,Message,Input, Radio, RadioGroup} from 'element-ui';
  Vue.use(Button)
  Vue.use(Select)
  Vue.use(Tree)
  Vue.use(Row)
  Vue.use(Col)
+ Vue.use(Input)
+ Vue.use(MessageBox)
+ Vue.use(Radio)
+ Vue.use(RadioGroup)
 
 
 

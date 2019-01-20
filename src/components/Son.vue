@@ -18,6 +18,9 @@
         reparent:''
       }
     },
+    mounted(){
+      console.log(this.toson)
+    },
     methods:{
       aa(v){
         this.$emit('ccc',v)
